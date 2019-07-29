@@ -1,0 +1,84 @@
+html {
+    /*background-color: limegreen*/
+    background-image: url(images/WebBackground.png);
+    background-repeat: repeat-y;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav {
+    background-color: crimson;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10vh 0px;
+    padding: 5vh 0px;
+
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex direction: column;
+    height: 100;
+}
+
+/*p  {text-shadow: 2px 2px 2px blue;}*/
+header h1,
+header h2 {
+    width: 80%;
+    margin: 10px 0 5px 5%;
+}
+
+header img {
+    margin: auto;
+}
+
+.nav li {
+    font-size: 2vh;
+    font-family: fantasy;
+    margin: -10px 9%;
+    max-height: 100px;
+}
+
+.left,
+.right,
+.bottom {
+    min-height: 100px;
+    background-color: white;
+}
+
+.left {
+    width: 35%;
+    background-color: aqua;
+}
+
+.right {
+    width: 65%;
+    background-color: darkred;
+}
+
+.bottom {
+    width: 100%;
+    height: 160px;
+    background-color: blueviolet;
+}
+
+
+section {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+
+
+}

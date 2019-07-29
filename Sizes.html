@@ -1,0 +1,49 @@
+<!doctype html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Trandscendence</title>
+
+    <script>
+        function calculate() {
+            var data = document.getElementById("sizeData").value
+            if (data >= 1 && data < 47) {
+                document.getElementById("answer").innerHTML = 'your size is a small guitar';
+            }
+            if (data >= 47 && data < 72) {
+                document.getElementById("answer").innerHTML = 'your size is a medium guitar';
+            }
+            if (data >= 72 && data < 133) {
+                document.getElementById("answer").innerHTML = 'your size is a large guitar';
+            }
+        }
+
+    </script>
+</head>
+<header>
+    <img alt="stuff" src="images/logoname3.png">
+    <h1>You get used to it</h1>
+
+</header>
+
+<body>
+
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Sizes.html">Sizes</a></li>
+
+    </ul>
+    <section>
+        <div class="bottom2">
+            <h2>Size Calculator</h2>
+            <input type="number" name="size" id="sizeData">
+            <button type="submit" onclick="calculate()">Submit</button>
+            <p id="answer"></p>
+        </div>
+    </section>
+
+</body>
